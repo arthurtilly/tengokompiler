@@ -1,0 +1,8 @@
+# Stuff python makes
+__pycache__/
+*.pyc
+
+# Other stuff
+*.bin
+*.tickflow
+*.gba
