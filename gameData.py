@@ -57,6 +57,7 @@ gameMarchingOrders = [
         ("marchingOrdersGfxUnk3", GFX_FUNC_NUM_ARG),
         ("marchingOrdersGfxUnk4", GFX_FUNC_NUM_ARG),
         ("marchingOrdersGfxUnk5", GFX_FUNC_NUM_ARG),
+        ("marchingOrdersGfxUnk6", GFX_FUNC_NUM_ARG),
     )
 ]
 
@@ -105,6 +106,7 @@ gameSneakySpirits = [
         ("sneakySpiritsGfxUnk7", GFX_FUNC_NUM_ARG),
         ("sneakySpiritsGfxUnk8", GFX_FUNC_NUM_ARG),
         ("sneakySpiritsGfxUnk9", GFX_FUNC_NUM_ARG),
+        ("sneakySpiritsGfxUnkA", GFX_FUNC_NUM_ARG),
     )
 ]
 
@@ -171,23 +173,50 @@ gameSickBeats = [
 gameBonOdori = [
     "GAME_BON_ODORI",
     (
-        ("bonOdoriGfxUnk0", GFX_FUNC_NUM_ARG),
-        ("bonOdoriGfxUnk1", GFX_FUNC_POINTER),
-        ("bonOdoriGfxUnk2", GFX_FUNC_POINTER),
-        ("bonOdoriGfxUnk3", GFX_FUNC_POINTER),
+        ("bonOdoriGfxTextHeight", GFX_FUNC_NUM_ARG),
+        ("bonOdoriGfxShowTextMid", GFX_FUNC_POINTER),
+        ("bonOdoriGfxShowTextL", GFX_FUNC_POINTER),
+        ("bonOdoriGfxShowTextR", GFX_FUNC_POINTER),
         ("bonOdoriGfxUnk4", GFX_FUNC_NUM_ARG),
-        ("bonOdoriGfxUnk5", GFX_FUNC_NUM_ARG),
-        ("bonOdoriGfxUnk6", GFX_FUNC_NUM_ARG),
-        ("bonOdoriGfxUnk7", GFX_FUNC_NUM_ARG),
+        ("bonOdoriGfxScrollText", GFX_FUNC_BEAT_VALUE),
+        ("bonOdoriGfxLightenScreen", GFX_FUNC_BEAT_VALUE),
+        ("bonOdoriGfxDarkenScreen", GFX_FUNC_BEAT_VALUE),
         ("bonOdoriGfxUnk8", GFX_FUNC_NUM_ARG),
-        ("bonOdoriGfxUnk9", GFX_FUNC_NUM_ARG),
-        ("bonOdoriGfxUnkA", GFX_FUNC_NUM_ARG),
-        ("bonOdoriGfxUnkB", GFX_FUNC_NUM_ARG),
-        ("bonOdoriGfxUnkC", GFX_FUNC_NUM_ARG),
-        ("bonOdoriGfxUnkD", GFX_FUNC_NUM_ARG),
+        ("bonOdoriGfxLightenScreenInst", GFX_FUNC_NUM_ARG),
+        ("bonOdoriGfxDarkenScreenInst", GFX_FUNC_NUM_ARG),
+        ("bonOdoriGfxCallAnimOthers", GFX_FUNC_IDS, (
+            "BD_ANIM_UNK0",
+            "BD_ANIM_CLAP_MID",
+            "BD_ANIM_CLAP_R",
+            "BD_ANIM_BOW",
+            "BD_ANIM_GLARE",
+            "BD_ANIM_HAPPY",
+            "BD_ANIM_HAPPY_HANDS",
+            "BD_ANIM_SPIN",
+        )),
+        ("bonOdoriGfxCallAnimPlayer", GFX_FUNC_IDS, (
+            "BD_ANIM_UNK0",
+            "BD_ANIM_CLAP_MID",
+            "BD_ANIM_CLAP_R",
+            "BD_ANIM_BOW",
+            "BD_ANIM_GLARE",
+            "BD_ANIM_HAPPY",
+            "BD_ANIM_HAPPY_HANDS",
+            "BD_ANIM_SPIN",
+        )),
+        ("bonOdoriGfxCallAnimAll", GFX_FUNC_IDS, (
+            "BD_ANIM_UNK0",
+            "BD_ANIM_CLAP_MID",
+            "BD_ANIM_CLAP_R",
+            "BD_ANIM_BOW",
+            "BD_ANIM_GLARE",
+            "BD_ANIM_HAPPY",
+            "BD_ANIM_HAPPY_HANDS",
+            "BD_ANIM_SPIN",
+        )), # How can I optimize it oh God
         ("bonOdoriGfxUnkE", GFX_FUNC_NUM_ARG),
-        ("bonOdoriGfxUnkF", GFX_FUNC_NUM_ARG),
-        ("bonOdoriGfxUnk10", GFX_FUNC_NUM_ARG),
+        ("bonOdoriGfxRecordPerf", GFX_FUNC_NUM_ARG),
+        ("bonOdoriGfxStopRecordPerf", GFX_FUNC_NUM_ARG),
     )
 ]
 
@@ -203,6 +232,7 @@ gameShowtime = [
     "GAME_SHOWTIME",
     (
         ("showtimeGfxUnk0", GFX_FUNC_NUM_ARG),
+        ("showtimeGfxUnk1", GFX_FUNC_NUM_ARG),
     )
 ]
 
@@ -218,6 +248,7 @@ gameBunnyHop = [
         ("bunnyHopGfxUnk6", GFX_FUNC_NUM_ARG),
         ("bunnyHopGfxUnk7", GFX_FUNC_NUM_ARG),
         ("bunnyHopGfxUnk8", GFX_FUNC_NUM_ARG),
+        ("bunnyHopGfxUnk9", GFX_FUNC_BEAT_VALUE),
     )
 ]
 
@@ -226,6 +257,7 @@ gameTramAndPauline = [
     (
         ("tramAndPaulineGfxUnk0", GFX_FUNC_NUM_ARG),
         ("tramAndPaulineGfxUnk1", GFX_FUNC_NUM_ARG),
+        ("tramAndPaulineGfxUnk2", GFX_FUNC_NUM_ARG),
     )
 ]
 
@@ -240,6 +272,7 @@ gameSpaceDance = [
         ("spaceDanceGfxUnk5", GFX_FUNC_NUM_ARG),
         ("spaceDanceGfxUnk6", GFX_FUNC_NUM_ARG),
         ("spaceDanceGfxUnk7", GFX_FUNC_NUM_ARG),
+        ("spaceDanceGfxUnk8", GFX_FUNC_NUM_ARG),
     )
 ]
 
@@ -251,6 +284,19 @@ gameQuizShow = [
         ("quizShowGfxUnk2", GFX_FUNC_NUM_ARG),
         ("quizShowGfxUnk3", GFX_FUNC_NUM_ARG),
         ("quizShowGfxUnk4", GFX_FUNC_NUM_ARG),
+        ("quizShowGfxUnk5", GFX_FUNC_NUM_ARG),
+        ("quizShowGfxUnk6", GFX_FUNC_NUM_ARG),
+        ("quizShowGfxUnk7", GFX_FUNC_NUM_ARG),
+        ("quizShowGfxUnk8", GFX_FUNC_NUM_ARG),
+        ("quizShowGfxUnk9", GFX_FUNC_NUM_ARG),
+        ("quizShowGfxUnkA", GFX_FUNC_NUM_ARG),
+        ("quizShowGfxUnkB", GFX_FUNC_NUM_ARG),
+        ("quizShowGfxUnkC", GFX_FUNC_NUM_ARG),
+        ("quizShowGfxUnkD", GFX_FUNC_NUM_ARG),
+        ("quizShowGfxUnkE", GFX_FUNC_NUM_ARG),
+        ("quizShowGfxUnkF", GFX_FUNC_NUM_ARG),
+        ("quizShowGfxUnk10", GFX_FUNC_NUM_ARG),
+        ("quizShowGfxUnk11", GFX_FUNC_NUM_ARG),
     )
 ]
 
@@ -264,6 +310,10 @@ gameNightWalk = [
         ("nightWalkGfxUnk4", GFX_FUNC_NUM_ARG),
         ("nightWalkGfxUnk5", GFX_FUNC_NUM_ARG),
         ("nightWalkGfxUnk6", GFX_FUNC_BEAT_VALUE),
+        ("nightWalkGfxUnk7", GFX_FUNC_NUM_ARG),
+        ("nightWalkGfxUnk8", GFX_FUNC_NUM_ARG),
+        ("nightWalkGfxUnk9", GFX_FUNC_NUM_ARG),
+        ("nightWalkGfxUnkA", GFX_FUNC_NUM_ARG),
     )
 ]
 
@@ -282,6 +332,8 @@ gamePowerCalligraphy = [
         ("powerCalligraphyGfxUnk9", GFX_FUNC_NUM_ARG),
         ("powerCalligraphyGfxUnkA", GFX_FUNC_NUM_ARG),
         ("powerCalligraphyGfxUnkB", GFX_FUNC_NUM_ARG),
+        ("powerCalligraphyGfxUnkC", GFX_FUNC_NUM_ARG),
+        ("powerCalligraphyGfxUnkD", GFX_FUNC_NUM_ARG),
     )
 ]
 
@@ -293,6 +345,7 @@ gamePolyrhythm = [
         ("polyrhythmResetPistons", GFX_FUNC_IDS, ("PR_LEFT_SIDE","PR_RIGHT_SIDE")),
         ("polyrhythmGfxUnk3", GFX_FUNC_NUM_ARG),
         ("polyrhythmGfxUnk4", GFX_FUNC_NUM_ARG),
+        ("polyrhythmGfxUnk5", GFX_FUNC_NUM_ARG),
     ),
 ]
 
@@ -300,6 +353,8 @@ gameRapMen = [
     "GAME_RAP_MEN",
     (
         ("rapMenGfxUnk0", GFX_FUNC_NUM_ARG),
+        ("rapMenGfxUnk1", GFX_FUNC_NUM_ARG),
+        ("rapMenGfxUnk2", GFX_FUNC_NUM_ARG),
     )
 ]
 
@@ -396,6 +451,20 @@ gameMechanicalHorse = [
     )
 ]
 
+gameMrUpbeat = [
+    "GAME_MR_UPBEAT",
+    (
+        ("mrUpbeatGfxUnk0", GFX_FUNC_BEAT_VALUE),
+        ("mrUpbeatGfxUnk1", GFX_FUNC_NUM_ARG),
+        ("mrUpbeatGfxUnk2", GFX_FUNC_NUM_ARG),
+        ("mrUpbeatGfxUnk3", GFX_FUNC_NUM_ARG),
+        ("mrUpbeatGfxUnk4", GFX_FUNC_NUM_ARG),
+        ("mrUpbeatGfxUnk5", GFX_FUNC_NUM_ARG),
+        ("mrUpbeatGfxUnk6", GFX_FUNC_NUM_ARG),
+    )
+]
+
+
 gameBanks = {
     0x089df044: gameKarateMan,
     0x089e41f4: gameRhythmTweezers,
@@ -422,8 +491,8 @@ gameBanks = {
     0x089e8a08: gameTossBoys,
     0x089e4500: gameFireworks,
     0x089e8130: gameTapTrial,
-    
     0x089e90b0: gameMechanicalHorse,
+    0x089e583c: gameMrUpbeat,
 }
 
 gameMidis = {
@@ -1189,7 +1258,7 @@ hardcodedSubs = {
     0x089d0a08: "script_sick_beats",
     0x089edd64: "sub_sick_beats_prologue",
     0x089fd1c4: "sub_sick_beats_main",
-    
+
     0x089d0ccc: "script_bouncy_road1",
     0x089d0dc0: "script_bouncy_road1_skipped_practice",
     0x089d0e9c: "script_bouncy_road2",
@@ -1234,6 +1303,15 @@ hardcodedSubs = {
     0x089d1e4c: "script_mechanical_horse",
     0x08a0ee70: "sub_mechanical_horse_main",
     
+    0x089d5fb0: "script_bon_odori",
+    0x089ea584: "sub_bon_odori_prologue",
+    0x08a43c64: "sub_bon_odori_main",
+    0x08a48368: "sub_bon_odori_practice",
+    0x089d60a4: "script_bon_odori_skipped_practice",
+    
+    0x089d6738: "script_mr_upbeat",
+    0x08a56f30: "sub_mr_upbeat_main",
+    
     0x089d2104: "script_marching_orders1",
     0x089d21f8: "script_marching_orders1_skipped_practice",
     0x089d22d4: "script_marching_orders2",
@@ -1274,7 +1352,15 @@ hardcodedSubs = {
     0x089eb5a0: "sub_power_calligraphy_prologue",
     0x08a1eb84: "sub_power_calligraphy_main",
     0x08a1f454: "sub_power_calligraphy_practice",
-    
+
+    0x089d6644: "script_remix4",
+    0x089ec280: "sub_remix4_prologue",
+    0x08a53a44: "sub_remix4_main",
+
+    0x089d6f60: "script_remix3",
+    0x089ec0b4: "sub_remix3_prologue",
+    0x08a60640: "sub_remix3_main",
+
     0x089d7330: "script_remix6",
     0x089ec630: "sub_remix6_prologue",
     0x08a6b250: "sub_remix6_main",
