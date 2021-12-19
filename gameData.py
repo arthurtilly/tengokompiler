@@ -45,6 +45,9 @@ gameRhythmTweezers = [
         ("rhythmTweezersCashierSound", GFX_FUNC_NO_ARG),
         ("rhythmTweezersGfxUnk5", GFX_FUNC_NUM_ARG),
         ("rhythmTweezersGfxUnk6", GFX_FUNC_NUM_ARG),
+        ("rhythmTweezersGfxUnk7", GFX_FUNC_NUM_ARG),
+        ("rhythmTweezersGfxUnk8", GFX_FUNC_NUM_ARG),
+        ("rhythmTweezersGfxUnk9", GFX_FUNC_NUM_ARG),
     )
 ]
 
@@ -121,6 +124,8 @@ gameSamuraiSlice = [
         ("samuraiSliceGfxUnk5", GFX_FUNC_NUM_ARG),
         ("samuraiSliceGfxUnk6", GFX_FUNC_NUM_ARG),
         ("samuraiSliceGfxUnk7", GFX_FUNC_NUM_ARG),
+        ("samuraiSliceGfxUnk8", GFX_FUNC_NUM_ARG),
+        ("samuraiSliceGfxUnk9", GFX_FUNC_POINTER), # Not a poiner actually but an ass big value that looks better in hex format
     )
 ]
 
@@ -133,7 +138,7 @@ gameRatRace = [
         ("ratRaceGfxUnk3", GFX_FUNC_NUM_ARG),
         ("ratRaceGfxUnk4", GFX_FUNC_NUM_ARG),
         ("ratRaceGfxUnk5", GFX_FUNC_NUM_ARG),
-        ("ratRaceGfxUnk6", GFX_FUNC_NUM_ARG),
+        ("ratRaceGfxUnk6", GFX_FUNC_POINTER),
         ("ratRaceGfxUnk7", GFX_FUNC_NUM_ARG),
         ("ratRaceGfxUnk8", GFX_FUNC_NUM_ARG),
         ("ratRaceGfxUnk9", GFX_FUNC_NUM_ARG),
@@ -391,6 +396,7 @@ gameNinjaBodyguard = [
         ("ninjaBodyguardGfxUnkF", GFX_FUNC_NUM_ARG),
         ("ninjaBodyguardGfxUnk10", GFX_FUNC_NUM_ARG),
         ("ninjaBodyguardGfxUnk11", GFX_FUNC_NUM_ARG),
+        ("ninjaBodyguardGfxUnk12", GFX_FUNC_NUM_ARG),
     )
 ]
 
@@ -402,6 +408,9 @@ gameTossBoys = [
             0x00030140:"TB_START_AKA_CHAN",
             0x00030141:"TB_START_AO_KUN",
             0x00030142:"TB_START_KII_YAN",
+            0x00060140:"TB_START_AKA_CHAN_REMIX5",
+            0x00060141:"TB_START_AO_KUN_REMIX5",
+            0x00060142:"TB_START_KII_YAN_REMIX5",
         }), # tf
         ("tossBoysPassBall", GFX_FUNC_POINTER), # figure out later
         ("tossBoysPlaySound", GFX_FUNC_NUM_ARG), # figure out later
@@ -413,6 +422,8 @@ gameTossBoys = [
             "TB_SPECIAL_KII_YAN",
         )),
         ("tossBoysRemoveSpecialOverlay", GFX_FUNC_NO_ARG),
+        ("tossBoysGfxUnk8", GFX_FUNC_NUM_ARG),
+        ("tossBoysGfxUnk9", GFX_FUNC_NUM_ARG),
     ),
 ]
 
@@ -421,6 +432,7 @@ gameFireworks = [
     (
         ("fireworksGfxUnk0", GFX_FUNC_NUM_ARG),
         ("fireworksGfxUnk1", GFX_FUNC_NUM_ARG),
+        ("fireworksGfxUnk2", GFX_FUNC_NUM_ARG),
     )
 ]
 
@@ -434,6 +446,15 @@ gameTapTrial = [
         ("tapTrialGfxUnk4", GFX_FUNC_NUM_ARG),
         ("tapTrialGfxUnk5", GFX_FUNC_NUM_ARG),
         ("tapTrialGfxUnk6", GFX_FUNC_NUM_ARG),
+        ("tapTrialGfxUnk7", GFX_FUNC_NUM_ARG),
+        ("tapTrialGfxUnk8", GFX_FUNC_NUM_ARG),
+        ("tapTrialGfxUnk9", GFX_FUNC_NUM_ARG),
+        ("tapTrialGfxUnkA", GFX_FUNC_NUM_ARG),
+        ("tapTrialGfxUnkB", GFX_FUNC_NUM_ARG),
+        ("tapTrialGfxUnkC", GFX_FUNC_NUM_ARG),
+        ("tapTrialGfxUnkD", GFX_FUNC_NUM_ARG),
+        ("tapTrialGfxUnkE", GFX_FUNC_NUM_ARG),
+        ("tapTrialGfxUnkF", GFX_FUNC_NUM_ARG),
     )
 ]
 
@@ -1304,10 +1325,10 @@ hardcodedSubs = {
     0x08a0ee70: "sub_mechanical_horse_main",
     
     0x089d5fb0: "script_bon_odori",
+    0x089d60a4: "script_bon_odori_skipped_practice",
     0x089ea584: "sub_bon_odori_prologue",
     0x08a43c64: "sub_bon_odori_main",
     0x08a48368: "sub_bon_odori_practice",
-    0x089d60a4: "script_bon_odori_skipped_practice",
     
     0x089d6738: "script_mr_upbeat",
     0x08a56f30: "sub_mr_upbeat_main",
@@ -1353,6 +1374,10 @@ hardcodedSubs = {
     0x08a1eb84: "sub_power_calligraphy_main",
     0x08a1f454: "sub_power_calligraphy_practice",
 
+    0x089d6550: "script_remix2",
+    0x089ebee8: "sub_remix2_prologue",
+    0x08a4ffd4: "sub_remix2_main",
+
     0x089d6644: "script_remix4",
     0x089ec280: "sub_remix4_prologue",
     0x08a53a44: "sub_remix4_main",
@@ -1361,7 +1386,18 @@ hardcodedSubs = {
     0x089ec0b4: "sub_remix3_prologue",
     0x08a60640: "sub_remix3_main",
 
+    0x089d7054: "script_remix7",
+    0x089ec820: "sub_remix7_prologue",
+    0x08a62444: "sub_remix7_main",
+
+    0x089d7148: "script_remix5",
+    0x089ec458: "sub_remix5_prologue",
+    0x08a64860: "sub_remix5_main",
+
     0x089d7330: "script_remix6",
     0x089ec630: "sub_remix6_prologue",
     0x08a6b250: "sub_remix6_main",
+
+    0x089d7424: "script_remix8",
+
 }
