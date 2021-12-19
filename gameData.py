@@ -1399,5 +1399,7 @@ hardcodedSubs = {
     0x08a6b250: "sub_remix6_main",
 
     0x089d7424: "script_remix8",
+    0x089ec9f8: "sub_remix8_prologue",
+    0x08a6f4c0: "sub_remix8_main",
 
 }
