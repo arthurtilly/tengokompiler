@@ -99,10 +99,10 @@ gameClappyTrio = [
 gameSneakySpirits = [
     "GAME_SNEAKY_SPIRITS",
     (
-        ("sneakySpiritsGfxUnk0", GFX_FUNC_NUM_ARG),
-        ("sneakySpiritsGfxUnk1", GFX_FUNC_NUM_ARG),
+        ("sneakySpiritsGfxGhostPos", GFX_FUNC_NUM_ARG),
+        ("sneakySpiritsGfxGhostHeight", GFX_FUNC_NUM_ARG),
         ("sneakySpiritsGfxUnk2", GFX_FUNC_NUM_ARG),
-        ("sneakySpiritsGfxUnk3", GFX_FUNC_NUM_ARG),
+        ("sneakySpiritsGfxRechargeBow", GFX_FUNC_NUM_ARG),
         ("sneakySpiritsGfxUnk4", GFX_FUNC_NUM_ARG),
         ("sneakySpiritsGfxUnk5", GFX_FUNC_POINTER),
         ("sneakySpiritsGfxUnk6", GFX_FUNC_NUM_ARG),
@@ -118,7 +118,7 @@ gameSamuraiSlice = [
     (
         ("samuraiSliceGfxUnk0", GFX_FUNC_NUM_ARG),
         ("samuraiSliceGfxUnk1", GFX_FUNC_NUM_ARG),
-        ("samuraiSliceGfxUnk2", GFX_FUNC_NUM_ARG),
+        ("samuraiSliceGfxSpawnDemon", GFX_FUNC_NUM_ARG),
         ("samuraiSliceGfxUnk3", GFX_FUNC_NUM_ARG),
         ("samuraiSliceGfxUnk4", GFX_FUNC_NUM_ARG),
         ("samuraiSliceGfxUnk5", GFX_FUNC_NUM_ARG),
@@ -326,7 +326,7 @@ gamePowerCalligraphy = [
     "GAME_POWER_CALLIGRAPHY",
     (
         ("powerCalligraphyGfxUnk0", GFX_FUNC_NUM_ARG),
-        ("powerCalligraphyGfxUnk1", GFX_FUNC_NUM_ARG),
+        ("powerCalligraphyGfxProgression", GFX_FUNC_NUM_ARG),
         ("powerCalligraphyGfxUnk2", GFX_FUNC_NUM_ARG),
         ("powerCalligraphyGfxUnk3", GFX_FUNC_NUM_ARG),
         ("powerCalligraphyGfxUnk4", GFX_FUNC_NUM_ARG),
@@ -348,8 +348,8 @@ gamePolyrhythm = [
         ("polyrhythmSpawnBlock", GFX_FUNC_NUM_ARG), # document later
         ("polyrhythmRemoveBlocks", GFX_FUNC_IDS, ("PR_LEFT_SIDE","PR_RIGHT_SIDE")),
         ("polyrhythmResetPistons", GFX_FUNC_IDS, ("PR_LEFT_SIDE","PR_RIGHT_SIDE")),
-        ("polyrhythmGfxUnk3", GFX_FUNC_NUM_ARG),
-        ("polyrhythmGfxUnk4", GFX_FUNC_NUM_ARG),
+        ("polyrhythmGfxSummonRods", GFX_FUNC_IDS, ("PR_LEFT_SIDE","PR_RIGHT_SIDE")),
+        ("polyrhythmGfxCondApplause", GFX_FUNC_NUM_ARG),
         ("polyrhythmGfxUnk5", GFX_FUNC_NUM_ARG),
     ),
 ]
@@ -385,7 +385,7 @@ gameNinjaBodyguard = [
         ("ninjaBodyguardGfxUnk4", GFX_FUNC_NUM_ARG),
         ("ninjaBodyguardGfxUnk5", GFX_FUNC_NUM_ARG),
         ("ninjaBodyguardGfxUnk6", GFX_FUNC_NUM_ARG),
-        ("ninjaBodyguardGfxUnk7", GFX_FUNC_NUM_ARG),
+        ("ninjaBodyguardGfxEnemyAmnt", GFX_FUNC_NUM_ARG),
         ("ninjaBodyguardGfxUnk8", GFX_FUNC_NUM_ARG),
         ("ninjaBodyguardGfxUnk9", GFX_FUNC_NUM_ARG),
         ("ninjaBodyguardGfxUnkA", GFX_FUNC_NUM_ARG),
@@ -475,9 +475,9 @@ gameMechanicalHorse = [
 gameMrUpbeat = [
     "GAME_MR_UPBEAT",
     (
-        ("mrUpbeatGfxUnk0", GFX_FUNC_BEAT_VALUE),
-        ("mrUpbeatGfxUnk1", GFX_FUNC_NUM_ARG),
-        ("mrUpbeatGfxUnk2", GFX_FUNC_NUM_ARG),
+        ("mrUpbeatGfxArrowMove", GFX_FUNC_BEAT_VALUE),
+        ("mrUpbeatGfxUnk1", GFX_FUNC_POINTER),
+        ("mrUpbeatGfxLight", GFX_FUNC_NO_ARG),
         ("mrUpbeatGfxUnk3", GFX_FUNC_NUM_ARG),
         ("mrUpbeatGfxUnk4", GFX_FUNC_NUM_ARG),
         ("mrUpbeatGfxUnk5", GFX_FUNC_NUM_ARG),
