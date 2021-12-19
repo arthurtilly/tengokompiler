@@ -45,8 +45,8 @@ gameRhythmTweezers = [
         ("rhythmTweezersCashierSound", GFX_FUNC_NO_ARG),
         ("rhythmTweezersGfxUnk5", GFX_FUNC_NUM_ARG),
         ("rhythmTweezersGfxUnk6", GFX_FUNC_NUM_ARG),
-        ("rhythmTweezersGfxUnk7", GFX_FUNC_NUM_ARG),
-        ("rhythmTweezersGfxUnk8", GFX_FUNC_NUM_ARG),
+        ("rhythmTweezersGfxShowSign", GFX_FUNC_NO_ARG),
+        ("rhythmTweezersGfxRemoveSign", GFX_FUNC_NO_ARG),
         ("rhythmTweezersGfxUnk9", GFX_FUNC_NUM_ARG),
     )
 ]
@@ -67,12 +67,12 @@ gameMarchingOrders = [
 gameSpaceball = [
     "GAME_SPACEBALL",
     (
-        ("spaceballGfxUnk0", GFX_FUNC_NUM_ARG),
-        ("spaceballGfxUnk1", GFX_FUNC_NUM_ARG),
-        ("spaceballGfxUnk2", GFX_FUNC_POINTER),
-        ("spaceballGfxUnk3", GFX_FUNC_NUM_ARG),
-        ("spaceballGfxUnk4", GFX_FUNC_NUM_ARG),
-        ("spaceballGfxUnk5", GFX_FUNC_NUM_ARG),
+        ("spaceballGfxUmpireBeatAnim", GFX_FUNC_NUM_ARG),
+        ("spaceballGfxLoopExitCond", GFX_FUNC_NUM_ARG),
+        ("spaceballGfxCamera", GFX_FUNC_POINTER),
+        ("spaceballGfxHelmet", GFX_FUNC_NUM_ARG),
+        ("spaceballGfxSetUmpireBeatAnim", GFX_FUNC_NUM_ARG),
+        ("spaceballGfxBallSprite", GFX_FUNC_NUM_ARG),
     )
 ]
 
@@ -260,8 +260,8 @@ gameBunnyHop = [
 gameTramAndPauline = [
     "GAME_TRAM_AND_PAULINE",
     (
-        ("tramAndPaulineGfxUnk0", GFX_FUNC_NUM_ARG),
-        ("tramAndPaulineGfxUnk1", GFX_FUNC_NUM_ARG),
+        ("tramAndPaulineGfxJump", GFX_FUNC_IDS, ("TP_TRAM","TP_PAULINE")),
+        ("tramAndPaulineGfxTransform", GFX_FUNC_IDS, ("TP_TRAM","TP_PAULINE")),
         ("tramAndPaulineGfxUnk2", GFX_FUNC_NUM_ARG),
     )
 ]
@@ -269,7 +269,7 @@ gameTramAndPauline = [
 gameSpaceDance = [
     "GAME_SPACE_DANCE",
     (
-        ("spaceDanceGfxUnk0", GFX_FUNC_NUM_ARG),
+        ("spaceDanceGfxCallAnim", GFX_FUNC_NUM_ARG),
         ("spaceDanceGfxUnk1", GFX_FUNC_NUM_ARG),
         ("spaceDanceGfxUnk2", GFX_FUNC_NUM_ARG),
         ("spaceDanceGfxUnk3", GFX_FUNC_NUM_ARG),
@@ -439,11 +439,11 @@ gameFireworks = [
 gameTapTrial = [
     "GAME_TAP_TRIAL",
     (
-        ("tapTrialGfxUnk0", GFX_FUNC_NUM_ARG),
+        ("tapTrialCallAnim", GFX_FUNC_NUM_ARG),   # https://drive.google.com/file/d/1-4_uDlVU3_FO0hJOHub8RQLrMgyD290I/view?usp=sharing Check Tap Trial docs for anims
         ("tapTrialGfxUnk1", GFX_FUNC_NUM_ARG),
         ("tapTrialGfxUnk2", GFX_FUNC_NUM_ARG),
-        ("tapTrialGfxUnk3", GFX_FUNC_NUM_ARG),
-        ("tapTrialGfxUnk4", GFX_FUNC_NUM_ARG),
+        ("tapTrialGfxGiraffe", GFX_FUNC_BOOLEAN),
+        ("tapTrialGfxGiraffeTalk", GFX_FUNC_POINTER),
         ("tapTrialGfxUnk5", GFX_FUNC_NUM_ARG),
         ("tapTrialGfxUnk6", GFX_FUNC_NUM_ARG),
         ("tapTrialGfxUnk7", GFX_FUNC_NUM_ARG),
